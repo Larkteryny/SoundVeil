@@ -8,15 +8,13 @@
 
     <body> 
         <header class = "header"> 
-            <a href = "#" class = "logo"> Dissonance </a>
+            <a href = "index.html" class = "logo"> Dissonance </a>
             <nav class = "navbar">
                 <a href = "index.html" class = "fontdef">Home</a>
                 <a href="instructions.html" class="fontdef">Guide</a>
                 <a href = "about.html" class = "fontdef">About</a>
                 <a href = "encode.html" class = "fontdef">Encoder</a>
                 <a href = "decode.html" class = "fontdef">Decoder</a>
-
-                
             </nav>
         </header>
         
@@ -25,19 +23,22 @@
                     
                     <h1 class = "h1encoder">Encode Message</h1>
                     <div class = "spaceBox1"> </div>
-                    <div class = "buttonName">
+
+                    <div class = "buttonDes">
                         Choose File
-                    <input type="file" class = "hide_file" id="audioInput" accept="audio/*" name="startFile">
-                    </div>
-                    <div>
-                        <label class="switch">
-                            <input type="checkbox" id="encrypt">
-                            <span class="slider round"></span>
-                        </label>
-                        <input type="text" id="encryptKey">
+                        <input type="file" class = "hide_file" id="audioInput" accept="audio/*" name="startFile">
                     </div>
                     <div>
                         <button onclick="encode()" class = "buttonDes">Encode</button>
+                    </div>
+                    <div class = "buttonName">
+                        Encrypt: &nbsp
+                        <label class="switch">
+                            <input type="checkbox" id="encrypt">
+                            &nbsp
+                            <span class="slider round"></span>
+                        </label>
+                        <input type="text" id="encryptKey">
                     </div>
                     
                     <div>
@@ -47,7 +48,7 @@
                     <audio id="audioPlayer" controls></audio>
                 </div>
                 <div class = "middle-right">
-                    <textarea id="messageInput" class = ta rows="3" placeholder="Your secret message 🤫"></textarea>
+                    <textarea id="messageInput" class = "ta" rows="3" placeholder="Your secret message 🤫"></textarea>
                 </div>
             </div>
             <div class="parent">
