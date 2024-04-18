@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.fontdef {
+    font-family: "Poppins";
+}
+body {
+    min-height: 100vh;
+    background-image: url('https://wallpapers.com/images/hd/neon-light-background-dxerqoc92f29nhpy.jpg');
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    align-items: center;
+    display:flex;
+    z-index: 100;
+    justify-content: space-between;
+}
+
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    font-size: 18 px;
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+.logo {
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+.h1 {
+    color: white;
+    font-size: 75px;
+    font-family: "Poppins";
+}
+
+.center {
+    display: flex;
+    width: 100%;
+    height: 950px;
+    align-items:center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.box {
+    background-color: rgba(60,60,60,0.2);
+    width: 1000px;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 20px rgba(60,60,60,0.2);
+}
+
+.box2 {
+    background-color: rgba(60,60,60,0.30);
+    padding: 50px;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 40px rgba(60,60,60,0.30);
+    vertical-align: middle;
+}
+
+.p {
+    color: white;
+    font-weight: 325;
+    font-family: "Poppins";
+    font-size: 20px;
+}
+
+.a {
+    font-family: "Bebas Neue";
+    position: relative;
+    padding: 10px 20px;
+    background: transparent;
+    background-color: white;
+    color: white;
+    text-decoration: none;
+    text-transform: UPPERCASE;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight:250;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.a:hover {
+    letter-spacing: 10px;
+    background: (--clr);
+    box-shadow: 0 0 35px var(--clr);
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+.a:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: rgb(0, 0, 0);
+}
+
+.a span {
+    position: relative;
+    z-index: 1;
+}
+
+.a1 {
+    font-family: "Bebas Neue";
+    position: relative;
+    padding: 10px 20px;
+    background: transparent;
+    background-color: white;
+    color: white;
+    text-decoration: none;
+    text-transform: UPPERCASE;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-weight:250;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.a1:hover {
+    letter-spacing: 10px;
+    background: (--clr);
+    box-shadow: 0 0 35px var(--clr);
+    animation: glowblue 2s ease-in-out infinite alternate;
+}
+
+.a1:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: rgb(0, 0, 0);
+}
+
+.a1 span {
+    position: relative;
+    z-index: 1;
+}
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #da0bb1, 0 0 40px #da0bb1, 0 0 50px #da0bb1, 0 0 60px #da0bb1, 0 0 70px #da0bb1;
+    }
+
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px rgb(225, 94, 171), 0 0 40px rgb(225, 94, 171), 0 0 50px rgb(225, 94, 171), 0 0 60px rgb(225, 94, 171) 0 0 70px rgb(225, 94, 171), 0 0 80px rgb(225, 94, 171);
+    }
+  }
+
+  @-webkit-keyframes glowblue {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #12d7e9, 0 0 40px #12d7e9, 0 0 50px #12d7e9, 0 0 60px #12d7e9, 0 0 70px #12d7e9;
+    }
+
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4ee7f5, 0 0 40px #4ee7f5, 0 0 50px #4ee7f5, 0 0 60px #4ee7f5 0 0 70px #4ee7f5, 0 0 80px #4ee7f5;
+    }
+  }
+
+  .spacingBox {
+    width:10px;
+  }
+
+  .h1encoder {
+    font-family:"Poppins";
+    color: white;
+    font-size: 35px;
+  }
+
+  .ta {
+    width: 400px;
+    height: 200px;
+  }
+
+.parentinline{
+    display: inline-flex;
+    margin:auto;
+}
+.parentinblock{
+    display: inline-block;
+    display:flex;
+    flex-wrap:nowrap;
+    align-items:center;
+}
+
+.middle-left {
+    position: fixed;
+    left: 25%;
+    top: 50%;         
+    transform: translateY(-50%); 
+    text-align: left;  
+  }
+
+  .middle-right {
+    position: fixed;
+    left: 75%;
+    top: 50%;         
+    transform: translateY(-50%) translateX(-100%); 
+    text-align: right;  
+  }
+
+  .downloadlink {
+    text-decoration: none;
+    font-family: "Poppins";
+    color: lightblue;
+  }
+
+.buttonDes {
+    display: inline-flex;
+    padding: 20px 30px;
+    border: 3px;
+    outline: 3px;
+    font-family: "Bebas Neue";
+    color: white;
+    font-size: 20px;
+    height: 60px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(183, 62, 196, 0.4);
+    text-decoration: none;
+}
+
+.buttonName {
+    display: inline-flex;
+    padding: 20px 30px;
+    border: 3px;
+    outline: 3px;
+    font-family: "Bebas Neue";
+    color: white;
+    font-size: 20px;
+    height: 60px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(183, 62, 196, 0.4);
+}
+
+.spaceBox1 {
+    height: 30px;
+}
+
+.hide_file {
+    position: fixed;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    height: 100%;
+    font-size: 24px;
+    width: 100%;
+}
+
+.parent {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    width: 100%; 
+}
+
+.box3 {
+    background-color: rgba(0,0,0,0.4);
+    width: 1000px;
+    height: 500px;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 20px rgba(00,0,0,0.4);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
