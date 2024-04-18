@@ -142,7 +142,6 @@ async function encode() {
         const link = document.querySelector("a[id='download']");
         link.href = downloadUrl;
         link.download = 'modified_audio.wav';
-        link.style.display = 'inline';
     };
 
     reader.readAsArrayBuffer(audioFileToUse);
