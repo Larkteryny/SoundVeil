@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Encode</title>
+        <meta charset="utf-8"> 
         <link rel="stylesheet" href="style.css">
         <script src="script.js" defer></script>
     </head>
@@ -10,11 +11,12 @@
         <header class = "header"> 
             <a href = "index.html" class = "logo"> Dissonance </a>
             <nav class = "navbar">
-                <a href = "index.html" class = "fontdef">Home</a>
+                <a href="index.html" class="fontdef">Home</a>
                 <a href="instructions.html" class="fontdef">Guide</a>
-                <a href = "about.html" class = "fontdef">About</a>
-                <a href = "encode.html" class = "fontdef">Encoder</a>
-                <a href = "decode.html" class = "fontdef">Decoder</a>
+                <a href="about.html" class="fontdef">About Us</a>
+                <a href="encode.html" class="fontdef">Encoder</a>
+                <a href="decode.html" class="fontdef">Decoder</a>
+                <a class="fontdef" onclick="changeLang()" id="language">EN</a>
             </nav>
         </header>
         
@@ -28,9 +30,6 @@
                         Choose File
                         <input type="file" class = "hide_file" id="audioInput" accept="audio/*" name="startFile">
                     </div>
-                    <div>
-                        <button onclick="encode()" class = "buttonDes">Encode</button>
-                    </div>
                     <div class = "buttonName">
                         Encrypt: &nbsp
                         <label class="switch">
@@ -38,11 +37,14 @@
                             &nbsp
                             <span class="slider round"></span>
                         </label>
-                        <input type="text" id="encryptKey">
+                        <input type="text" id="encryptKey" placeholder="Your secret keyword">
+                    </div>
+                    <div>
+                        <button onclick="encode()" class = "buttonDes">Encode</button>
                     </div>
                     
                     <div>
-                        <a id="download" href="" download="encoded_audio.wav" class = "buttonDes"> Downloaded Encoded Audio</a>
+                        <a id="download" href="" download="encoded_audio.wav" class = "buttonDes">Download Encoded Audio</a>
                     </div>
                     <div class = "spaceBox1"> </div>
                     <audio id="audioPlayer" controls></audio>

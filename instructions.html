@@ -2,29 +2,31 @@
 <html>
 
 <head>
-  <title>Instructions</title>
+  <title>Guide</title>
+  <meta charset="utf-8"> 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <header class="header">
     <a href="index.html" class="logo"> Dissonance </a>
     <nav class="navbar">
-      <a href="index.html" class="fontdef">Home</a>
-      <a href="instructions.html" class="fontdef">Guide</a>
-      <a href="about.html" class="fontdef">About Us</a>
-      <a href="encode.html" class="fontdef">Encoder</a>
-      <a href="decode.html" class="fontdef">Decoder</a>
+        <a href="index.html" class="fontdef">Home</a>
+        <a href="instructions.html" class="fontdef">Guide</a>
+        <a href="about.html" class="fontdef">About Us</a>
+        <a href="encode.html" class="fontdef">Encoder</a>
+        <a href="decode.html" class="fontdef">Decoder</a>
+        <a class="fontdef" onclick="changeLang()" id="language">EN</a>
     </nav>
   </header>
   <div class="center">
     <div class="box">
-      <h1 class="h1"> How to Use This Project </h1>
+      <h1 class="h1">How to Use This Project</h1>
       <div class="box2">
         <div class="p">
           <p>The Encoder conceals a text message into an audio file. Any audio/video (mp4, mov, mp4, wav) files are supported via file upload. Enter your secret message into the text area, and a new audio file will be provided containing it. For additional security, you may also choose to encrypt your secret message and provide a key (alphabetic characters only).</p> 
-          <p>The Decoder extracts a text message from an audio file. If the sender encrypted the message with a key, you can supply the same key to obtain the original message. 
-          </p>
+          <p>The Decoder extracts a text message from an audio file. If the sender encrypted the message with a key, you can supply the same key to obtain the original message.</p>
         </div>
       </div>
     </div>

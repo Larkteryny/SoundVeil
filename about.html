@@ -3,7 +3,9 @@
 
 <head>
   <title>About Us</title>
+  <meta charset="utf-8"> 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -15,13 +17,14 @@
       <a href="about.html" class="fontdef">About Us</a>
       <a href="encode.html" class="fontdef">Encoder</a>
       <a href="decode.html" class="fontdef">Decoder</a>
+      <a class="fontdef" onclick="changeLang()" id="language">EN</a>
     </nav>
   </header>
   <div class="center">
     <div class="box">
       <h1 class="h1"> About This Project</h1>
       <div class="box2">
-        <div class="p">
+        <div class="p" id="aboutText">
           <p> This project was made for the 2024 YRHacks by a team of four friends.</p>
           <p> SoundVeil conceals data in the least significant bits of audio samples, differences that are too slight
             for humans to detect, but still able to be extracted by SoundVeil's built-in decoder. Futhermore, we offer
